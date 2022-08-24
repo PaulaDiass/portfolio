@@ -2,11 +2,195 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paula Dias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <link href="./styles/general.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Em construção.</h1>
+    <div class="container-home">
+      <header class="container-header">
+        <nav class="header-nav">
+          <ul class="nav-menu">
+            <li>
+              <a class="nav-link active" href="#"> Home </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#about"> About </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#projects"> Projects </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#contact"> Contact </a>
+            </li>
+          </ul>
+          <ul class="nav-profile-links">
+            <li>
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/pfatimadias/"
+                target="_blank"
+              >
+                <img src="./assets/linkedin.svg" alt="LinkedIn" />
+              </a>
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="https://github.com/PaulaDiass"
+                target="_blank"
+              >
+                <img src="./assets/github.svg" alt="GitHub" />
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="">
+                <img src="./assets/moon-fill.svg" alt="Dark Mode" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container-main">
+        <section class="about-section" id="about">
+          <h4>Hi! My name is</h4>
+          <h1>Paula Dias,</h1>
+          <h2>and I'm a web developer.</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            commodo, tortor vel sagittis placerat, tellus magna ultricies
+            turpis, et malesuada lorem felis sed lacus. Sed id sapien et orci
+            posuere egestas. Integer lacinia turpis nulla, scelerisque gravida
+            tellus blandit eget. Sed id odio vitae leo venenatis lobortis.
+            Maecenas ultricies sem est, vel ullamcorper elit pulvinar et. Sed
+            eleifend vestibulum rutrum. Aenean id purus tellus. Nullam a urna
+            sit amet ligula sodales interdum id at lorem. In feugiat accumsan
+            nisl, sed congue ante molestie ullamcorper. Phasellus facilisis,
+            neque porta aliquam auctor, nunc arcu convallis mi, at malesuada sem
+            elit ut lectus.
+          </p>
+          <h3 class="skills-title">Skills</h3>
+          <div class="about-skills">
+            <div class="skills-list">
+              <h5>Frontend</h5>
+              <ul>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Material UI</li>
+              </ul>
+            </div>
+            <div class="skills-list">
+              <h5>Backend</h5>
+              <ul>
+                <li>Node.js</li>
+                <li>REST APIs</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+            <div class="skills-list">
+              <h5>Other</h5>
+              <ul>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>VSCode</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="projects-section" id="projects">
+          <h3>Recent projects</h3>
+          <div class="projects-list">
+            <div class="project-card">
+              <h5>Building...</h5>
+              <a href="">View code</a>
+            </div>
+            <div class="project-card">
+              <h5>Building...</h5>
+              <a href="">View code</a>
+            </div>
+            <div class="project-card">
+              <h5>Building...</h5>
+              <a href="">View code</a>
+            </div>
+            <div class="project-card">
+              <h5>Building...</h5>
+              <a href="">View code</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <h3>Get in touch</h3>
+          <div class="contact-list">
+            <div class="contact-card">
+              <p>Send me an email:</p>
+              <a href="mailto:paulafmadias@gmail.com">
+                <img src="./assets/envelope-fill.svg" alt="Email" />
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <p>Talk to me on LinkedIn:</p>
+              <a
+                href="https://www.linkedin.com/in/pfatimadias/"
+                target="_blank"
+              >
+                <img src="./assets/linkedin.svg" alt="LinkedIn" />
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <p>Send me a message on WhatsApp:</p>
+              <a href="https://wa.me/5511984468333" target="_blank">
+                <img src="./assets/whatsapp.svg" alt="WhatsApp" />
+              </a>
+            </div>
+          </div>
+
+          <p class="contact-resume">
+            You can also see my resume for more contact info
+            <a
+              href="https://drive.google.com/file/d/1OIDcbZs0AQT28xsJavccy-bhyka_bDUB/view?usp=sharing"
+              target="_blank"
+            >
+              <img src="./assets/box-arrow-up-right.svg" alt="Resume link" />
+            </a>
+          </p>
+        </section>
+      </main>
+      <footer class="container-footer">
+        <span class="footer-info"> Created by Paula Dias </span>
+        <nav class="footer-nav">
+          <ul class="nav-profile-links">
+            <li>
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/pfatimadias/"
+                target="_blank"
+              >
+                <img src="./assets/linkedin.svg" alt="LinkedIn" />
+              </a>
+            </li>
+            <li>
+              <a
+                class="nav-link"
+                href="https://github.com/PaulaDiass"
+                target="_blank"
+              >
+                <img src="./assets/github.svg" alt="GitHub" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
   </body>
 </html>
