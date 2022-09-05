@@ -22,7 +22,8 @@ body {
   color: var(--light);
 }
 
-a {
+a,
+button {
   all: unset;
 }
 a:hover {
@@ -62,8 +63,8 @@ h5 {
 .container-home {
   height: 100vh;
   max-width: 800px;
-  padding-top: 8rem;
   margin: auto;
+  position: relative;
 }
 
 .container-header {
@@ -71,7 +72,7 @@ h5 {
   max-width: 800px;
   margin: auto;
 
-  padding: 2rem;
+  padding: 2rem 2rem;
 
   position: fixed;
   top: 0;
@@ -103,14 +104,15 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .nav-link:hover {
   background-color: var(--grey);
 }
 
-.nav-link svg {
-  font-size: 24px;
+a img {
+  width: 24px;
 }
 
 .active {
@@ -118,11 +120,20 @@ h5 {
   background-color: var(--grey);
 }
 
+.nav-menu-icon {
+  display: none;
+  z-index: 12;
+}
+
+.nav-menu-icon-img {
+  width: 34px;
+}
+
 .container-main {
-  padding: 6rem 2rem;
+  padding: 0 3rem 3rem 3rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
-  gap: 8rem;
 }
 
 .container-main section {
@@ -147,6 +158,10 @@ h5 {
 
 .skills-list li {
   margin-top: 1rem;
+}
+
+.section-title {
+  padding-top: 8rem;
 }
 
 .projects-list {
@@ -209,6 +224,9 @@ h5 {
   margin-top: 1rem;
 
   font-style: italic;
+}
+.contact-resume img {
+  width: 18px;
 }
 
 .container-footer {
