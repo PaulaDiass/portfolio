@@ -1,0 +1,12 @@
+.container-about {
+  padding: 0 3rem 3rem 3rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-about section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
