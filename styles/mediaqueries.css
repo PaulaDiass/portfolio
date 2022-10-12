@@ -1,4 +1,8 @@
 @media only screen and (max-width: 505px) {
+  body {
+    font-size: 1.6rem;
+  }
+
   .nav-link:hover {
     background-color: transparent;
   }

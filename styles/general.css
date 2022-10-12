@@ -10,18 +10,19 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   background-color: var(--background);
   color: var(--text);
 }
 
 :root {
-  --background: var(--light-color);
-  --text: var(--dark-color);
-  --grey: rgba(33, 37, 41, 0.2);
-  --lightgrey: rgba(33, 37, 41, 0.05);
-  --light-color: rgb(249, 250, 251);
-  --dark-color: rgb(33, 37, 41);
+  --background: var(--light);
+  --text: var(--dark);
+
+  --light: #f8f8f9;
+  --dark: #3f3f55;
+  --grey1: #9b9bb2;
+  --grey2: #c8c8d7;
 }
 
 a,
@@ -124,12 +125,12 @@ i {
 }
 
 .nav-link:hover {
-  background-color: var(--grey);
+  background-color: var(--grey1);
 }
 
 .active {
   font-weight: 500;
-  background-color: var(--grey);
+  background-color: var(--grey1);
 }
 
 .nav-menu-button {
@@ -192,13 +193,13 @@ i {
 
   padding: 2rem;
 
-  background-color: var(--lightgrey);
+  background-color: var(--grey2);
   border-radius: 10px;
 }
 
 .project-card a {
   padding: 1rem;
-  background-color: var(--grey);
+  background-color: var(--grey1);
   border-radius: 5px;
   width: fit-content;
   align-self: flex-end;
@@ -221,7 +222,7 @@ i {
 
   padding: 2rem;
 
-  border: 1px solid var(--grey);
+  border: 1px solid var(--grey1);
   border-radius: 10px;
 }
 

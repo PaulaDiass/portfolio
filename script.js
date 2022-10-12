@@ -26,31 +26,41 @@ function handleOpenMenu() {
 
 //dark theme
 
-let darkTheme = false;
+let theme = JSON.parse(localStorage.getItem('dark-theme'));
+let darkTheme = theme ? theme : false;
 let darkModeButton = document.querySelector('.dark-mode-button');
 let darkModeIcon = document.querySelector('.dark-mode-icon');
 const stylesheet = document.styleSheets[0];
 const root = [...stylesheet.cssRules].find((r) => r.selectorText === ':root');
 
-function darkMode() {
-  darkModeButton.addEventListener('click', () => handleSwitchTheme());
+darkModeButton.addEventListener('click', () => handleSwitchTheme());
+
+function setInitialTheme() {
+  setThemeIcon();
+  setThemeColors();
 }
-darkMode();
+setInitialTheme();
 
 function handleSwitchTheme() {
   darkTheme = !darkTheme;
+  localStorage.setItem('dark-theme', darkTheme);
+  setThemeIcon();
+  setThemeColors();
+}
+
+function setThemeIcon() {
   darkModeIcon.classList.add(
     darkTheme ? 'bi-brightness-high-fill' : 'bi-moon-fill'
   );
   darkModeIcon.classList.remove(
     darkTheme ? 'bi-moon-fill' : 'bi-brightness-high-fill'
   );
+}
 
-  const newBackgroundColor = darkTheme
-    ? 'var(--dark-color)'
-    : 'var(--light-color)';
+function setThemeColors() {
+  const newBackgroundColor = darkTheme ? 'var(--dark)' : 'var(--light)';
 
-  const newTextColor = darkTheme ? 'var(--light-color)' : 'var(--dark-color)';
+  const newTextColor = darkTheme ? 'var(--light)' : 'var(--dark)';
 
   root.style.setProperty('--background', newBackgroundColor);
   root.style.setProperty('--text', newTextColor);
